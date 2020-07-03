@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ohme</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+  </head>
+  <body>
+    <div id="background-opacity"></div>
+
+    <header class="header">
+      <ul>
+        <li><a href="#" title="Sapatos">Sapatos</a></li>
+        <li><a href="#" title="Novidades">Novidades</a></li>
+        <!-- <li><a href="#" title="Quem Somos">Quem Somos</a></li> -->
+        <li><a href="#" title="Bazar">Bazar</a></li>
+      </ul>
+      <img src="./assets/logo.svg" alt="Ohme" />
+      <ul>
+        <li><a href="#" title="Buscar">Buscar</a></li>
+        <li><a href="#" title="Minha Conta">Minha Conta</a></li>
+        <li><a href="#" title="Sacola">Sacola</a></li>
+      </ul>
+    </header>
+
+    <header class="header-mobile">
+      <span onclick="openNav()">&#9776;</span>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">Sapatos</a>
+        <a href="#">Novidades</a>
+        <a href="#">Quem Somos</a>
+        <a href="#">Bazar</a>
+        <a href="#">Minha Conta</a>
+      </div>
+
+      <img src="./assets/logo.svg" alt="Ohme" />
+    </header>
+
+    <div class="main">
+      <div class="category-header">
+        <div class="category-header-title">
+          <h1>Sapatos</h1>
+        </div>
+        <div class="category-header-sortby">
+          <section>
+            <select>
+              <option value="1">Maior preço</option>
+              <option value="2">Menor preço</option>
+              <option value="3">Nome A-Z</option>
+              <option value="4">Nome Z-A</option>
+            </select>
+          </section>
+        </div>
+      </div>
+
+      <ul class="products">
+        <li class="product">
+          <a href="#"
+            ><img
+              src="http://secure-static.owme.com.br/medias/sys_master/owme/h5b/hf6/h00/h00/9119924224030/7005800010002U-01-BASEIMAGE-Lores.jpg"
+              alt="ALPARGATA HELOISA TECIDO CAMEL"
+          /></a>
+          <div class="product-inf">
+            <h3 class="product-title">ALPARGATA HELOISA TECIDO CAMEL</h3>
+            <p class="product-price">R$ 260,12</p>
+          </div>
+        </li>
+
+        <li class="product">
+          <a href="#"
+            ><img
+              src="http://secure-static.owme.com.br/medias/sys_master/owme/hc3/h97/h00/h00/9151261769758/7006200010002U-01-BASEIMAGE-Lores.jpg"
+              alt="PUMP ISABELLA CAMURÇA FERRUGEM"
+          /></a>
+          <div class="product-inf">
+            <h3 class="product-title">PUMP ISABELLA CAMURÇA FERRUGEM</h3>
+            <p class="product-price">R$ 290,00</p>
+          </div>
+        </li>
+
+        <li class="product">
+          <a href="#"
+            ><img
+              src="http://secure-static.owme.com.br/medias/sys_master/owme/h81/h6c/h00/h00/9151250628638/7006200010007U-01-BASEIMAGE-Lores.jpg"
+              alt="PUMP ISABELLA CAMURÇA NOITE"
+          /></a>
+          <div class="product-inf">
+            <h3 class="product-title">PUMP ISABELLA CAMURÇA NOITE</h3>
+            <p class="product-price">R$ 256,56</p>
+          </div>
+        </li>
+
+        <li class="product">
+          <a href="#"
+            ><img
+              src="http://secure-static.owme.com.br/medias/sys_master/owme/h5d/h7d/h00/h00/9159870185502/7001400020015U-01-BASEIMAGE-Lores.jpg"
+              alt="SANDÁLIA TERESA COURO CROCO NOITE"
+          /></a>
+          <div class="product-inf">
+            <h3 class="product-title">SANDÁLIA TERESA COURO CROCO NOITE</h3>
+            <p class="product-price">R$ 360,00</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="container-pagination">
+        <ul class="pagination">
+          <li class="previous"><</li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li class="next">></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="./js/App.js"></script>
+</html>
