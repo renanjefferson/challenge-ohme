@@ -52,11 +52,11 @@
         </div>
         <div class="category-header-sortby">
           <section>
-            <select>
-              <option value="1">Maior preço</option>
-              <option value="2">Menor preço</option>
-              <option value="3">Nome A-Z</option>
-              <option value="4">Nome Z-A</option>
+            <select onchange="setSortby(this.value)">
+              <option value="price-desc">Maior preço</option>
+              <option value="price-asc">Menor preço</option>
+              <option value="name-desc">Nome A-Z</option>
+              <option value="name-asc">Nome Z-A</option>
             </select>
           </section>
         </div>
