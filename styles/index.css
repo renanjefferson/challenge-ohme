@@ -145,6 +145,12 @@ ul.products li {
   padding: 0 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  ul.products li {
+    width: 50%;
+  }
+}
+
 ul.products li img {
   width: 100%;
 }
@@ -157,6 +163,7 @@ ul.products li .product-inf h3 {
   width: 100%;
   margin: 5px 0;
   font-size: 11px;
+  overflow: hidden;
   white-space: nowrap;
   font-weight: normal;
 }
