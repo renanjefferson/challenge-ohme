@@ -18,6 +18,9 @@ function closeNav() {
  * Get Mock Products
  */
 
+let products = [];
+let ul = document.querySelector(".products");
+
 const Primise = function () {
   return new Promise(function (resolve, reject) {
     var xhr = new XMLHttpRequest();
@@ -41,7 +44,8 @@ const Primise = function () {
 
 Primise()
   .then(function (response) {
-    this.listProduct(response.products);
+    products = response.products;
+    listProducts((sortBy = "price-desc"));
   })
   .catch(function (error) {
     console.warn(error);
@@ -58,24 +62,60 @@ function formatValue(value) {
   }).format(value);
 }
 
+function getTypeSortBy(sortBy) {
+  switch (sortBy) {
+    case "price-desc":
+      ul.innerHTML = "";
+
+      return (products = products.sort((a, b) => b.price - a.price));
+
+    case "price-asc":
+      ul.innerHTML = "";
+
+      return (products = products.sort((a, b) => a.price - b.price));
+
+    case "name-desc":
+      ul.innerHTML = "";
+
+      return (products = products.sort((a, b) => {
+        if (a.name < b.name) return -1;
+        else if (a.name > b.name) return 1;
+        return 0;
+      }));
+
+    case "name-asc":
+      ul.innerHTML = "";
+
+      return (products = products.sort((a, b) => {
+        if (a.name > b.name) return -1;
+        else if (a.name < b.name) return 1;
+        return 0;
+      }));
+
+    default:
+      break;
+  }
+}
+
 /**
  * List products
  */
 
-function listProduct(products) {
-  var ul = document.querySelector(".products");
+function listProducts(value) {
+  getTypeSortBy(value);
+
   products.map(
     (product) =>
       (ul.innerHTML += `<li class="product">
-  <a href="#"
-    ><img
-      src="${product.image}"
-      alt="${product.name}"
-  /></a>
-  <div class="product-inf">
-    <h3 class="product-title">${formatName(product.name, 18)}</h3>
-    <p class="product-price">${formatValue(product.price)}</p>
-  </div>
-</li>`)
+        <a href="#"
+          ><img
+            src="${product.image}"
+            alt="${product.name}"
+        /></a>
+        <div class="product-inf">
+          <h3 class="product-title">${formatName(product.name, 18)}</h3>
+          <p class="product-price">${formatValue(product.price)}</p>
+        </div>
+      </li>`)
   );
 }
