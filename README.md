@@ -1,6 +1,6 @@
 Teste para criação de uma página de listagem de produtos, que irá conter:
 
-- Menu
+- Menu (Mobile)
 - Listagem de produtos (busca da listagem através de XHR)
 - Paginação a cada 20 produtos
 - Um "filtro" de ordenação
@@ -11,7 +11,7 @@ Teste para criação de uma página de listagem de produtos, que irá conter:
 
 ## Preview
 
-<img alt="Ohme" src="https://github.com/renanjefferson/challenge-ohme/tree/master/assets/preview.png" width="100%" />
+<img alt="Ohme" src="https://github.com/renanjefferson/challenge-ohme/blob/master/assets/preview.png" width="100%" />
 
 ## Para desenvolvimento
 
@@ -19,7 +19,7 @@ Teste para criação de uma página de listagem de produtos, que irá conter:
 
 - [HTML]
 - [CSS]
-- [JavaScript]
+- [JavaScrit]
 
 ## Instalação
 
@@ -29,13 +29,11 @@ Clone o projeto com
 git clone https://github.com/renanjefferson/challenge-ohme.git
 ```
 
-````
-
 Para executar o projeto, abra o seguinte link no seu navegador:
 
 ```sh
 http://localhost/challenge-ohme/
-````
+```
 
 ## Agradecimentos
 
