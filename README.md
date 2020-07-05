@@ -19,7 +19,7 @@ Teste para criação de uma página de listagem de produtos, que irá conter:
 
 - [HTML]
 - [CSS]
-- [JavaScrit]
+- [JavaScript]
 
 ## Instalação
 
