@@ -11,7 +11,7 @@ Teste para criação de uma página de listagem de produtos, que irá conter:
 
 ## Preview
 
-<img alt="Ohme" src="https://github.com/renanjefferson/challenge-ohme/blob/master/assets/preview.png" width="100%" />
+<img alt="Ohme" src="https://github.com/renanjefferson/challenge-ohme/blob/master/src/assets/preview.png" width="100%" />
 
 ## Para desenvolvimento
 
@@ -45,9 +45,7 @@ yarn dev
 
 Acesse a url
 
-```sh
-<a href="http://localhost:8080/" target="_blank"></a>
-```
+<a href="http://localhost:8080/" target="_blank">http://localhost:8080/</a>
 
 ## Agradecimentos
 
