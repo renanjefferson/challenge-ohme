@@ -1,3 +1,4 @@
+@import "variables";
 /**
  * Style Global
  */
@@ -9,7 +10,7 @@
   box-sizing: border-box;
 }
 body {
-  background: #fff;
+  background: $white-color;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -49,7 +50,7 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $border-color;
 }
 
 .header ul {
@@ -59,7 +60,7 @@ button {
 }
 
 .header ul li > a {
-  color: #000;
+  color: $black-color;
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;
@@ -70,7 +71,7 @@ button {
 }
 
 .header ul li > a:hover {
-  color: #83a484;
+  color: $green-support-color;
 }
 
 .header-mobile {
@@ -79,7 +80,7 @@ button {
   align-items: center;
   justify-content: center;
   padding: 0 30px;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $border-color;
 }
 
 .header-mobile span {
@@ -121,7 +122,7 @@ button {
   width: 150px;
   height: 30px;
   padding: 0 10px;
-  background: #fff;
+  background: $white-color;
   border: 1px solid #bebebe;
   border-radius: 0;
   font-size: 13px;
@@ -207,15 +208,15 @@ ul.products li .product-inf p {
 }
 
 .container-pagination ul li:hover {
-  background-color: #83a484;
+  background-color: $green-support-color;
 }
 
 .container-pagination ul li:hover a {
-  color: #fff;
+  color: $white-color;
 }
 
 .container-pagination ul li a {
-  color: #000;
+  color: $black-color;
   padding: 12px;
   text-decoration: none;
   line-height: 18px;
@@ -244,16 +245,16 @@ ul.products li .product-inf p {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: $white-color;
   overflow-x: hidden;
   transition: 0.5s;
 }
 
 .sidenav a {
   padding: 15px 10px;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $border-color;
   text-decoration: none;
-  color: #000;
+  color: $black-color;
   display: block;
   transition: 0.3s;
   font-weight: 800;
@@ -262,7 +263,7 @@ ul.products li .product-inf p {
 
 .sidenav a:hover,
 .offcanvas a:focus {
-  color: #83a484;
+  color: $green-support-color;
 }
 
 .sidenav a:first-child {
