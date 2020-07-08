@@ -1,4 +1,11 @@
 import "../styles/main.scss";
+import logo from "../assets/logo.svg";
+
+document.querySelector(".logo").innerHTML = `<img src="${logo}" alt="Ohme" />`;
+
+document.querySelector(
+  ".logo-mobile"
+).innerHTML = `<img src="${logo}" alt="Ohme" />`;
 
 /**
  * Menu
@@ -28,7 +35,7 @@ const Primise = function () {
     var xhr = new XMLHttpRequest();
 
     xhr.overrideMimeType("application/json");
-    xhr.open("GET", "./utils/mock-products.json", true);
+    xhr.open("GET", "../utils/mock-products.json", true);
 
     xhr.send(null);
 
