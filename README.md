@@ -20,6 +20,8 @@ Teste para criação de uma página de listagem de produtos, que irá conter:
 - [HTML]
 - [CSS]
 - [JavaScript]
+- [Babel]
+- [Webpack]
 
 ## Instalação
 
@@ -29,10 +31,22 @@ Clone o projeto com
 git clone https://github.com/renanjefferson/challenge-ohme.git
 ```
 
-Para executar o projeto, abra o seguinte link no seu navegador:
+Agora navegue até a pasta criada e abra no Visual Studio Code, lembre-se de executar o comando `yarn` no seu terminal para instalar todas as dependências
 
 ```sh
-http://localhost/challenge-ohme/
+yarn
+```
+
+Execute o projeto
+
+```sh
+yarn dev
+```
+
+Acesse a url
+
+```sh
+<a href="http://localhost:8080/" target="_blank"></a>
 ```
 
 ## Agradecimentos
