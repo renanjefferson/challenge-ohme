@@ -28,10 +28,10 @@
     </header>
 
     <header class="header-mobile">
-      <span onclick="openNav()">&#9776;</span>
+      <span id="open-menu">&#9776;</span>
 
       <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        <a href="javascript:void(0)" class="closebtn" id="close-menu"
           >&times;</a
         >
         <a href="#">Sapatos</a>
@@ -51,7 +51,7 @@
         </div>
         <div class="category-header-sortby">
           <section>
-            <select onchange="listProducts(this.value)">
+            <select class="sort-by" onchange="value">
               <option value="price-desc">Maior preço</option>
               <option value="price-asc">Menor preço</option>
               <option value="name-desc">Nome A-Z</option>
